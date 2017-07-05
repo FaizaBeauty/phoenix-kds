@@ -1,0 +1,199 @@
+body, html{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: fixed;
+  font-weight: 700;
+  color: #a8a8a8;
+}
+
+/*
+=================================
+GRID
+=================================
+*/
+
+.contain  {
+  width: 100%;
+  display: inline-block;
+}
+
+
+/*
+=================================
+HEADER
+=================================
+*/
+
+header  {
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+header nav {
+  background: rgba(123,52,47,0.8);
+}
+
+header li {
+  padding: 20px 20px;
+  display: inline-block;
+  margin: 0px;
+}
+
+header a {
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 14.5px;
+  display: inline-block;
+  transition: 3s;
+}
+
+header a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f6685e;
+  transition: width .3s;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+
+
+.home {
+  background-image: url("../../images/one.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.desc {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 12% 0px;
+  position: absolute;
+}
+
+.desc h2 {
+  font-size: 70px;
+  margin: 10px 0px;
+}
+
+.desc button {
+  border: 0px;
+  background: #7b342f;
+  border-radius: 0px;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+
+/*
+=================================
+FOOTER
+=================================
+*/
+
+footer {
+  width: 100%;
+  background: #323232;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+/*
+=================================
+FOOTER
+=================================
+*/
+
+footer {
+  background: #240f0e;
+}
+
+footer .message{
+  width: 80%;
+  margin: 40px auto;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+footer .message .social {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+footer .message .social i {
+  font-size: 24px;
+  color: #7b342f;
+  padding: 20px 25px;
+  border-radius: 50%;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+footer .message .social i:hover {
+  color: #f6685e;
+  
+}
+
+footer .message form {
+  width: 100%;
+}
+
+footer .message form h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 15px 0px
+}
+
+.message form input,.message form textarea {
+  display: block;
+  width: 100%;
+  color: black;
+  border-radius: 0px;
+  margin: 15px 0px;
+}
+
+.message form button {
+  display: inline-block;
+  width: 30%;
+  border-radius: 0px;
+  margin: 15px 0px;
+  color: white;
+}
